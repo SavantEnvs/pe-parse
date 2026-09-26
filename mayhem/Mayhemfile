@@ -1,0 +1,11 @@
+project: savantenvs/pe-parse
+target: fuzz-parse-buggy-mhh-run-3
+
+cmds:
+  - cmd: /mayhem/fuzz-parse
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+
+# origin: https://app.mayhem.security/mayhemheroes/pe-parse/fuzz-parse/3
